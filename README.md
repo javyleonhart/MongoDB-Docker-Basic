@@ -1,6 +1,7 @@
 # MongoDB-Docker-Basic
 
 ![](https://www.arsys.es/blog/file/uploads/2016/10/MongoDB.jpg)
+![](https://miro.medium.com/v2/resize:fit:1000/1*JK4VDnsrF6YnAb2nyhMsdQ.png)
 
 Para correr MongoDB en Docker seguiremos los siguientes pasos en los que crearemos una series de instrucciones en el archivo .yml para instalar MongoDB en el contenedor, luego crearemos el .sh para ejecutar la creacion del contenedor (ejecutando el .yml) y entrar al mismo. 
 
@@ -28,7 +29,8 @@ Opción 2.
 _____________________________________________
 <li>Crear documento de docker-compose.yml</li>
 
-version: '2.2'
+
+`version: '2.2'
 
 services:
 
@@ -44,7 +46,7 @@ services:
       - ./monguitodata:/data/db
       - ./monguitodata/log:/var/log/mongodb/
     ports:
-      - "27017:27017"
+      - "27017:27017"`
     
 (En las palabras entre "" reemplazar el nombre del usuario y la contraseña por una a eleccion para acceder)
 (Presionaremos Ctrl + D para cerrar la escritura del archivo)
@@ -57,18 +59,18 @@ __________________________________________
 
 > cat > mongo.sh   	(Copiar y pegar los comandos que queremos se ejecuten automáticos)
 
-#Crear carpeta para volumen de mongo:
+##Crear carpeta para volumen de mongo:
 mkdir monguitodata && cd monguitodata; cd monguitodata || mkdir log
 
 cd
 
-#Iniciar el contenedor:
+##Iniciar el contenedor:
 sudo docker-compose up -d
 
-#Mostrar mensaje:
+##Mostrar mensaje:
 echo "Monguito está iniciandose ......."
 
-#entrar en el contenedor
+##entrar en el contenedor
 sudo docker exec -it monguito bash
 
 _______
