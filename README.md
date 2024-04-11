@@ -19,13 +19,13 @@ Opción 1.
 
 Opción 2.
 
-*Con el comando touch crearemos el archivo .yml*
+> Con el comando touch crearemos el archivo .yml
 
-> touch docker-compose.yml
+    touch docker-compose.yml
 
-*Con el comando cat > escribiremos ese archivo con las instrucciones del paso siguiente*
+> Con el comando cat > escribiremos ese archivo con las instrucciones del paso siguiente
 
-> cat > docker-compose.yml
+    cat > docker-compose.yml
 _____________________________________________
 <li>Crear documento de docker-compose.yml</li>
 
@@ -58,20 +58,23 @@ __________________________________________
 
 > cat > mongo.sh   	(Copiar y pegar los comandos que queremos se ejecuten automáticos)
 
-##Crear carpeta para volumen de mongo:
-mkdir monguitodata && cd monguitodata; cd monguitodata || mkdir log
+**Crear carpeta para volumen de mongo:**
+
+    mkdir monguitodata && cd monguitodata; cd monguitodata || mkdir log
 
 cd
 
-##Iniciar el contenedor:
+**Iniciar el contenedor:**
 
-sudo docker-compose up -d
+    sudo docker-compose up -d
 
-##Mostrar mensaje:
-echo "Monguito está iniciandose ......."
+**Mostrar mensaje:**
 
-##entrar en el contenedor
-sudo docker exec -it monguito bash
+    echo "Monguito está iniciandose ......."
+
+**Entrar en el contenedor**
+
+    sudo docker exec -it monguito bash
 
 _______
 <li>Salimos del archivo para que se escriba</li>
@@ -83,3 +86,31 @@ _________________________________________________________
 > chmod u+x mongo.sh
 > ./mongo.sh 
 </ol>
+
+
+### Una vez que tenemos MongoDB corriendo ya podemos probar los comandos basicos:
+
+
+# COMANDOS MONGO DB
+_______________________
+Mostrar Bases de datos:
+
+     show dbs
+______________________________________
+Crear o ubicarse en uns base de datos:
+
+     use databasename
+_______________________________________
+Saber que base de datos estamos usando:
+
+    db
+________________
+Crear colección:
+ 
+    db.createCollection('nameCollection')
+    {"Clave": "Valor"}
+
+________________
+Mostrar el contenido de una colección:
+
+    showCollections
