@@ -64,6 +64,7 @@ mkdir monguitodata && cd monguitodata; cd monguitodata || mkdir log
 cd
 
 ##Iniciar el contenedor:
+
 sudo docker-compose up -d
 
 ##Mostrar mensaje:
