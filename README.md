@@ -60,9 +60,11 @@ __________________________________________
 
 **Crear carpeta para volumen de mongo:**
 
-    mkdir monguitodata && cd monguitodata; cd monguitodata || mkdir log
-
-cd
+    mkdir monguitodata
+    
+    cd monguitodata
+    
+    mkdir log
 
 **Iniciar el contenedor:**
 
