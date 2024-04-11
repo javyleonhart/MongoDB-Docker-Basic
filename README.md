@@ -1,5 +1,7 @@
 # MongoDB-Docker-Basic
 
+![](https://www.arsys.es/blog/file/uploads/2016/10/MongoDB.jpg)
+
 Para correr MongoDB en Docker seguiremos los siguientes pasos en los que crearemos una series de instrucciones en el archivo .yml para instalar MongoDB en el contenedor, luego crearemos el .sh para ejecutar la creacion del contenedor (ejecutando el .yml) y entrar al mismo. 
 
 
