@@ -29,24 +29,23 @@ Opción 2.
 _____________________________________________
 <li>Crear documento de docker-compose.yml</li>
 
+    version: '2.2'
 
-`version: '2.2'
+    services:
 
-services:
-
-  mongo:
-    image: mongo:4.0.4
-    restart: always
-    container_name: monguito
-    environment:
-      - MONGODB_USER="user"
-      - MONGODB_PASS="pass"	
+    mongo:
+      image: mongo:4.0.4
+      restart: always
+      container_name: monguito
+      environment:
+        - MONGODB_USER="user"
+        - MONGODB_PASS="pass"	
       
-    volumes:
-      - ./monguitodata:/data/db
-      - ./monguitodata/log:/var/log/mongodb/
-    ports:
-      - "27017:27017"`
+      volumes:
+        - ./monguitodata:/data/db
+        - ./monguitodata/log:/var/log/mongodb/
+      ports:
+        - "27017:27017"
     
 (En las palabras entre "" reemplazar el nombre del usuario y la contraseña por una a eleccion para acceder)
 (Presionaremos Ctrl + D para cerrar la escritura del archivo)
