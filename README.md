@@ -8,7 +8,7 @@ En la línea de comando.
 ____________________________________________________________
 
 <ol>
-<li>*Crear documento de docker-compose*</li>
+<li>Crear documento de docker-compose</li>
 
 Opción 1.
 
@@ -24,7 +24,7 @@ Opción 2.
 
 > cat > docker-compose.yml
 _____________________________________________
-<li>*Crear documento de docker-compose.yml*</li>
+<li>Crear documento de docker-compose.yml</li>
 
 version: '2.2'
 
@@ -47,11 +47,11 @@ services:
 (En las palabras entre "" reemplazar el nombre del usuario y la contraseña por una a eleccion para acceder)
 (Presionaremos Ctrl + D para cerrar la escritura del archivo)
 ____________________________________________________________
-<li>*Crear archivos para correr comando en la la terminal*</li>
+<li>Crear archivos para correr comando en la la terminal</li>
 
 > touch mongo.sh
 __________________________________________
-<li>*Cargar comandos al archivo creado*</li>
+<li>Cargar comandos al archivo creado</li>
 
 > cat > mongo.sh   	(Copiar y pegar los comandos que queremos se ejecuten automáticos)
 
@@ -70,11 +70,11 @@ echo "Monguito está iniciandose ......."
 sudo docker exec -it monguito bash
 
 _______
-<li>*Salimos del archivo para que se escriba*</li>
+<li>Salimos del archivo para que se escriba</li>
 
 > Control + d
 _________________________________________________________
-<li>*Asignar permisos de ejecución y ejecutar mongo.sh*</li>
+<li>Asignar permisos de ejecución y ejecutar mongo.sh</li>
 
 > chmod u+x mongo.sh
 > ./mongo.sh 
