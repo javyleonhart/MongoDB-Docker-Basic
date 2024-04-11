@@ -86,6 +86,7 @@ _________________________________________________________
 <li>Asignar permisos de ejecución y ejecutar mongo.sh</li>
 
 > chmod u+x mongo.sh
+> 
 > ./mongo.sh 
 </ol>
 
