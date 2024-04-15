@@ -47,7 +47,7 @@ _____________________________________________
       ports:
         - "27017:27017"
     
-(En las palabras entre "" reemplazar el nombre del usuario y la contraseña por una a eleccion para acceder)
+(En las palabras entre "" se puede reemplazar el nombre del usuario y la contraseña por una a eleccion para acceder)
 (Presionaremos Ctrl + D para cerrar la escritura del archivo)
 ____________________________________________________________
 <li>Crear archivos para correr comando en la la terminal</li>
