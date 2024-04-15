@@ -33,7 +33,7 @@ _____________________________________________
 
     services:
 
-    mongo:
+     mongo:
       image: mongo:4.0.4
       restart: always
       container_name: monguito
