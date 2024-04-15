@@ -39,7 +39,7 @@ _____________________________________________
       container_name: monguito
       environment:
         - MONGODB_USER="user"
-        - MONGODB_PASS="pass"	
+        - MONGODB_PASS="pass"
       
       volumes:
         - ./monguitodata:/data/db
