@@ -85,9 +85,10 @@ _______
 _________________________________________________________
 <li>Asignar permisos de ejecución y ejecutar mongo.sh</li>
 
-> chmod u+x mongo.sh
-> 
-> ./mongo.sh 
+    chmod u+x mongo.sh
+.
+
+    mongo
 </ol>
 
 
@@ -98,15 +99,15 @@ _________________________________________________________
 _______________________
 Mostrar Bases de datos:
 
-     show dbs
+     show dbs;
 ______________________________________
 Crear o ubicarse en uns base de datos:
 
-     use databasename
+     use databasename;
 _______________________________________
 Saber que base de datos estamos usando:
 
-    db
+    db;
 ________________
 Crear colección:
  
@@ -116,4 +117,4 @@ Crear colección:
 ________________
 Mostrar el contenido de una colección:
 
-    showCollections
+    showCollections;
